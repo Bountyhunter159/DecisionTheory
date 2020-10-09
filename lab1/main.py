@@ -16,11 +16,11 @@ for x in matrix:
  minValues.append(min(x))
  maxValues.append(max(x))
 
-print(maxValues)
+
 print(minValues)
 
-print('Min from max and max from min')
-print(min(maxValues))
+print('Max from min')
+
 print(max(minValues))
 print('___________________________________________________________')
 
@@ -62,9 +62,9 @@ print("q1 = %(q0)s q2 = %(q1)s q3 = %(q2)s"%{"q0":"{:.2f}".format(qn[0]),"q1":"{
 
 blmatrix = []
 maxbl = []
-for x, y in zip(matrix, qn) :
-    blmatrix.append([(i+ .0) * y for i in x])
-    maxbl.append(sum([(i+ .0) * y for i in x]))
+for x in matrix :
+    blmatrix.append([(i+ .0) * y for i, y in zip(x,qn)])
+    maxbl.append(sum([(i+ .0) * y for i, y in zip(x,qn)]))
 
 print(blmatrix)
 print('Max values ')
