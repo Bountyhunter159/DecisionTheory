@@ -7,9 +7,9 @@ for line in f:
 
 ratings =[]
 result =[]
-names = [ 'Boeing',  'Tupolev','Airbus','Bombardier','Albatross']
+names = [ 'Opel',  'Fiat','Porshe','Shkoda','VW']
 
-print("№   Paramether importance   Boeing   Tupolev    Airbus  Bombardier Albatross")
+print("№   Paramether importance   Opel   Fiat    Porshe  Shkoda VW")
 
 for element in data:
     for i in range(8):
